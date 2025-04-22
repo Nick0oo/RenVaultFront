@@ -227,7 +227,7 @@ export function FormAddElement(props: FormAddElementProps) {
                 <FormLabel className="flex justify-between">
                   Contraseña
                   <span title="Generar contraseña aleatoria">
-  <Shuffle
+                 <Shuffle
     className="cursor-pointer"
     size={15}
     onClick={generateRandomPassword}
@@ -244,14 +244,14 @@ export function FormAddElement(props: FormAddElementProps) {
                     <Eye
                       className="absolute top-3 right-10 cursor-pointer"
                       size={18}
-                      title="Mostrar/Ocultar"
+                      
                       onClick={() => setShowPassword(!showPassword)}
                     />
                     <Copy
                       className="absolute top-3 right-2 cursor-pointer"
                       onClick={() => copyClipboard(field.value)}
                       size={18}
-                      title="Copiar"
+                      
                     />
                   </div>
                 </FormControl>
