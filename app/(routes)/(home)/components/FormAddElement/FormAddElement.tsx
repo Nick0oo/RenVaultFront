@@ -226,12 +226,13 @@ export function FormAddElement(props: FormAddElementProps) {
               <FormItem>
                 <FormLabel className="flex justify-between">
                   Contraseña
-                  <Shuffle
-                    className="cursor-pointer"
-                    size={15}
-                    title="Generar contraseña aleatoria"
-                    onClick={generateRandomPassword}
-                  />
+                  <span title="Generar contraseña aleatoria">
+  <Shuffle
+    className="cursor-pointer"
+    size={15}
+    onClick={generateRandomPassword}
+  />
+</span>
                 </FormLabel>
                 <FormControl>
                   <div className="relative">
