@@ -3,6 +3,8 @@ import * as Sentry from "@sentry/nextjs";
 Sentry.init({
   dsn: "https://fb2bdb84cab27567f15c51d11835adc9@o4509318946160640.ingest.us.sentry.io/4509318983122944",
 
+  tracesSampleRate: 1.0, // Adjust this value in production, or use tracesSampler for finer control
+
   integrations: [
     Sentry.replayIntegration(),
   ],
